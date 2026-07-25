@@ -12,7 +12,7 @@ output:
 
 const obj3= Object.keys(obj1).filter(key=>!(key in obj2));
 const obj4= Object.keys(obj2).filter(key=>!(key in obj1));
-console.log(obj3,obj4)
+console.log(obj3,obj4)   // [ 'b' ] [ 'd' ]
 // method 2
 const set1 = new Set(Object.keys(obj1));
 const set2 = new Set(Object.keys(obj2));
@@ -22,4 +22,4 @@ const missing = [
     ...Object.keys(obj2).filter(key=>!(set1.has(key)))
 ]
 
-console.log(missing);
+console.log(missing);  //  [ 'b', 'd' ]
