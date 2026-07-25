@@ -5,7 +5,9 @@ const obj = {
     d:2,
     e:1
 };
+
 let max=0;
+let maxKey;
 
 for(const k in obj){
     if(max<obj[k])max=obj[k]
